@@ -3,7 +3,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: ghostwhite;
 }
 
 nav {
@@ -34,7 +35,7 @@ main {
 
 footer {
     padding: 10px;
-    color: yellow;
+    color: white;
 }
 
 footer div {
@@ -51,13 +52,34 @@ footer div p {
     font-weight: bold;
 }
 
+.titulo {
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    padding: 5px;
+    border: solid 5px yellow;
+    background-color: purple;
+    border-radius: 8px;
+}
+
 .container {
+    justify-content: center;
     display: flex;
     align-items: center;
+    border: solid 2px blueviolet;
+    align-content: center;
+    border-radius: 4px;
+    padding: 5px;
+    gap: 5px;
+    background-color: rgba(251, 255, 0, 0.06);
+}
+
+.container p {
+    text-align: justify;
+    font-size: 24px;
 }
 
 img {
-    width: 50%;
+    width: 30%;
 }
 
 .text {
@@ -65,4 +87,83 @@ img {
     font-size: 16px;
     line-height: 1.5;
     color: black;
+}
+
+.contato {
+    flex: 1;
+    /* Ocupa o mesmo espaço que a tabela */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: blueviolet;
+}
+
+.tabela {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+}
+
+.tabela h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabela th {
+    background-color: purple;
+    color: white;
 }
